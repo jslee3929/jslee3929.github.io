@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+div {
+    box-sizing: border-box;
+}
+
+p, h4, h3, h2, h1, span, button {
+    margin: 0px;
+    transform: rotate(0.03deg);
+}
+
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(#4298d7, #4e5db8);
+    padding-top: 150px;
+    padding-left: 150px;
+    color: white;
+}
+
+.header-subject {
+    margin-bottom: 20px;
+}
+
+.header-content {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.header-button {
+    width: 150px;
+    height: 50px;
+    background: #444445;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.header-button:hover {
+    background: #e2a937;
+}
+
+.header-image {
+    display: block;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+}
+
+.header-image img {
+    /* 이미지 padding 제거 */
+    vertical-align: bottom;
+}
+
+.copy {
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.copy-button {
+    width: 150px;
+    height: 50px;
+    background: #444445;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.copy-button:hover {
+    background: #5261b4;
+}
+
+.service-bg {
+    background: #5061ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+}
+
+.service-subject {
+    color: white;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+}
+
+.service-container i {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: #5061ba;
+}
+
+.service-content {
+    text-align: center;
+    color: white;
+    margin: 30px;
+}
+
+.portfolio {
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+}
+
+.portfolio-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(170, 170, 170);
+}
+
+.portfolio-item {
+    width: 50%;
+    color: white;
+    text-align: left;
+}
+
+/* 이미지를 div의 background로 적용하고 아래와 같이 설정하면 이미지만 어둡게 가능 */
+/* .portfolio-item__img {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(portfolio-1.jpg);
+} */
+
+.portfolio-item h1 {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background-color: none;
+    color: #eee;
+}
+
+.portfolio-item p {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 85%;
+    background-color: none;
+    color: #eee;
+}
+
+.portfolio-item img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+.overlay-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: 0px;
+    transition: all 1s;
+}
+
+.overlay-wrap:hover .overlay{
+    border: 20px solid white;
+}
+
+.contact {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    width: 500px;
+    text-align: center;
+}
+
+.contact-item i {
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    background: #5061ba;
+    color: white;
+}
+
+.company {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    .header {
+        padding: 0px;
+        padding-top: 80px;
+        height: 850px;
+    }
+    .header-subject {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .header-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .header-button {
+        margin: auto;
+        display: block;
+    }
+    .header-image {
+        right: unset;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .service-bg {
+        height: 700px;
+        justify-content: unset;
+        padding: 50px;
+    }
+    .service-container {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .service-content {
+        /* background-color: white; */
+        margin: 40px;
+    }
+    .portfolio {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .service-bg {
+        justify-content: unset;
+        padding: 50px;
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        padding: 0px;
+        padding-top: 80px;
+        height: 850px;
+    }
+    .header-subject {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .header-content {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        text-align: center;
+    }
+    .header-button {
+        margin: auto;
+        display: block;
+    }
+    .header-image {
+        right: unset;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .service-bg {
+        justify-content: unset;
+        padding: 50px;
+        height: 1200px;
+    }
+}
